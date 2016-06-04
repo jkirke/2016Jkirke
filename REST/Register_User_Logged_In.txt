@@ -1,0 +1,2 @@
+Register User Logged In - GET http://148.100.104.148:5000/registrar/test_user0
+

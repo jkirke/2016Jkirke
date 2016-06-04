@@ -1,0 +1,42 @@
+Invoke Chaincode - POST http://148.100.107.76:5000/chaincode/
+Body without security
+{
+    "jsonrpc": "2.0",
+    "method": "invoke",
+    "params": {
+        "type": 1,
+        "chaincodeID": {
+            "name": "4910440292cb84786151beb891746eba9f78e28f45c75ba231e7ab518a92ccbfde5adc89d83997db6bddc8740f33503cc7a1883fb8bde94f177e4c583ec5d11d"
+        },
+        "ctorMsg": {
+            "function": "invoke",
+            "args": [
+                "a",
+                "b",
+                "500"
+            ]
+        },
+		"id": 3
+}
+
+Body with security
+{
+    "jsonrpc": "2.0",
+    "method": "invoke",
+    "params": {
+        "type": 1,
+        "chaincodeID": {
+            "name": "4910440292cb84786151beb891746eba9f78e28f45c75ba231e7ab518a92ccbfde5adc89d83997db6bddc8740f33503cc7a1883fb8bde94f177e4c583ec5d11d"
+        },
+        "ctorMsg": {
+            "function": "invoke",
+            "args": [
+                "a",
+                "b",
+                "500"
+            ]
+        },
+        "secureContext": "test_user0"
+    },
+    "id": 3
+}

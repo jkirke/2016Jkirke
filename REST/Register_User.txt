@@ -1,0 +1,6 @@
+Register User - POST http://148.100.104.148:5000/registrar
+Body
+{
+"enrollId":"test_user0",
+"enrollSecret":"MS9qrN8hFjlE"
+}

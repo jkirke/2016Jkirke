@@ -1,0 +1,35 @@
+Deploy Chaincode - POST http://148.100.107.76:5000/chaincode/
+Body without security
+{
+  "jsonrpc": "2.0",
+  "method": "deploy",
+  "params": {
+    "type": 1,
+    "chaincodeID":{
+        "path":"github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02"
+    },
+    "ctorMsg": {
+        "function":"init",
+        "args":["a", "2000", "b", "2000"]
+    }
+  },
+  "id": 1
+}
+
+Body with security
+{
+  "jsonrpc": "2.0",
+  "method": "deploy",
+  "params": {
+    "type": 1,
+    "chaincodeID":{
+        "path":"/root/jason/chaincode_example02/chaincode_example02.go"
+    },
+    "ctorMsg": {
+        "function":"init",
+        "args":["a", "2000", "b", "2000"]
+    },
+    "secureContext": "test_user0"
+  },
+  "id": 1
+}

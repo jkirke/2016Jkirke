@@ -1,0 +1,52 @@
+{
+  "chainName" : "client1",
+  "KeyValStore" :"keyValStore",
+  "deployWaitTime": "5",
+  "invokeWaitTime": "5",
+  "ca": {
+    "ca_url":"grpc://9.2.98.113:10000"
+  },
+  "peers":[
+    {
+      "name":"vp0",
+      "peer_url":"grpc://9.2.98.113:20001"
+    },
+    {
+      "name":"vp1",
+      "peer_url":"grpc://9.2.98.113:20101"
+    },
+    {
+      "name":"vp2",
+      "peer_url":"grpc://9.2.98.113:20201"
+    },
+    {
+      "name":"vp3",
+      "peer_url":"grpc://9.2.98.113:20301"
+    }
+  ],
+  "users": [
+    {
+      "username":"admin",
+      "secret":"Xurw3yU9zI0l",
+      "affiliation": "group1"
+    },
+    {
+      "username":"JasonK",
+      "secret":"JJ10Rere",
+      "affiliation": "group1"
+    }
+  ],
+  "deployRequest":{
+    "chaincodePath":"chaincode_example02",
+    "functionName":"init",
+    "args":["a","5000","b","5000"]
+  },
+  "invokeRequest":{
+    "functionName":"invoke",
+    "args":["a","b","100"]
+  },
+  "queryRequest":{
+    "functionName":"query",
+    "args":["a"]
+  }
+}

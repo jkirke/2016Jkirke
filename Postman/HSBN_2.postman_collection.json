@@ -1,0 +1,71 @@
+{
+	"id": "4753ca90-65b0-178e-0f28-593b484bb685",
+	"name": "HSBN_2",
+	"description": "",
+	"order": [
+		"85bf1ad7-35c2-b16e-28c7-7c50241b4467",
+		"1a8387a5-e5a6-17c9-bc8f-8fcaa8d16dbf",
+		"21145167-0db0-2eaa-f783-6eaf26bb3a38"
+	],
+	"folders": [],
+	"timestamp": 0,
+	"owner": "587654",
+	"public": false,
+	"published": false,
+	"requests": [
+		{
+			"id": "1a8387a5-e5a6-17c9-bc8f-8fcaa8d16dbf",
+			"headers": "",
+			"url": "https://9.2.98.214:20100/chaincode/",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "tests[\"Body matches string\"] = responseBody.has(\"OK\");",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1472763693330,
+			"name": "Test 4 Invoke a to b 400 - vp1",
+			"description": "",
+			"collectionId": "4753ca90-65b0-178e-0f28-593b484bb685",
+			"rawModeData": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"invoke\",\r\n    \"params\": {\r\n        \"type\": 1,\r\n        \"chaincodeID\": {\r\n            \"name\": \"70dfc8e6aab1d13428f8732f4013af116dd588b76ab813734aaca5d9e2903b668b902420477d382f8dc234b4c30f5587addea8a5bf2e25c470ec46d9b27cbabc\"\r\n        },\r\n        \"ctorMsg\": {\r\n            \"function\": \"invoke\",\r\n            \"args\": [\r\n                \"a\",\r\n                \"b\",\r\n                \"400\"\r\n            ]\r\n        },\r\n        \"secureContext\": \"user_type1_d65f38dac8\"\r\n    },\r\n    \"id\": 3\r\n}"
+		},
+		{
+			"id": "21145167-0db0-2eaa-f783-6eaf26bb3a38",
+			"headers": "",
+			"url": "https://9.2.98.214:20200/chaincode/",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "tests[\"Body matches string\"] = responseBody.has(\"OK\");",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1472763769744,
+			"name": "Test 5 Invoke b to a 900 - vp2",
+			"description": "",
+			"collectionId": "4753ca90-65b0-178e-0f28-593b484bb685",
+			"rawModeData": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"invoke\",\r\n    \"params\": {\r\n        \"type\": 1,\r\n        \"chaincodeID\": {\r\n            \"name\": \"70dfc8e6aab1d13428f8732f4013af116dd588b76ab813734aaca5d9e2903b668b902420477d382f8dc234b4c30f5587addea8a5bf2e25c470ec46d9b27cbabc\"\r\n        },\r\n        \"ctorMsg\": {\r\n            \"function\": \"invoke\",\r\n            \"args\": [\r\n                \"b\",\r\n                \"a\",\r\n                \"900\"\r\n            ]\r\n        },\r\n        \"secureContext\": \"user_type1_70717b5dfc\"\r\n    },\r\n    \"id\": 3\r\n}"
+		},
+		{
+			"id": "85bf1ad7-35c2-b16e-28c7-7c50241b4467",
+			"headers": "",
+			"url": "https://9.2.98.214:20000/chaincode/",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "tests[\"Body matches string\"] = responseBody.has(\"OK\");",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1472763084148,
+			"name": "Test 3 Invoke a to b 500 - vp0",
+			"description": "",
+			"collectionId": "4753ca90-65b0-178e-0f28-593b484bb685",
+			"rawModeData": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"invoke\",\r\n    \"params\": {\r\n        \"type\": 1,\r\n        \"chaincodeID\": {\r\n            \"name\":\"70dfc8e6aab1d13428f8732f4013af116dd588b76ab813734aaca5d9e2903b668b902420477d382f8dc234b4c30f5587addea8a5bf2e25c470ec46d9b27cbabc\"\r\n        },\r\n        \"ctorMsg\": {\r\n            \"function\": \"invoke\",\r\n            \"args\": [\r\n                \"a\",\r\n                \"b\",\r\n                \"500\"\r\n            ]\r\n        },\r\n        \"secureContext\": \"user_type1_1dd72aebfe\"\r\n    },\r\n    \"id\": 3\r\n}"
+		}
+	]
+}

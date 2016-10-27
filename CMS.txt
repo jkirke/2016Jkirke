@@ -1,0 +1,25 @@
+./csmcli.sh -server tardis.watson.ibm.com -port 9560
+blockchain
+z13test
+
+csmcli> lssess
+Name                      Status   State            Copy Type
+=============================================================
+LP27-Full-Backup          Normal   Target Available FlashCopy
+Test_Backup_9308_to_9309  Inactive Defined          FlashCopy
+LP27-Full-Restore         Normal   Target Available FlashCopy
+
+csmcli> lssessactions LP27-Full-Backup
+Action                   Description
+=================================================
+flash                    FlashCopy
+initiate_background_copy Initiate background copy
+terminate                Terminate session
+
+csmcli> cmdsess -action flash LP27-Full-Backup
+IWNR1807W [Oct 8, 2016 10:03:07 AM] This command will cause point-in-time relationships to be established from the source volumes to the target volumes of session LP27-Full-Backup, overwriting any data on the target volumes. Do you want to continue? [y/n]:y
+ IWNR1026I [Oct 8, 2016 10:03:26 AM] The Flash command in the LP27-Full-Backup session completed.
+
+csmcli> cmdsess -action flash LP27-Full-Restore
+IWNR1807W [Oct 8, 2016 10:44:13 AM] This command will cause point-in-time relationships to be established from the source volumes to the target volumes of session LP27-Full-Restore, overwriting any data on the target volumes. Do you want to continue? [y/n]:y
+ IWNR1026I [Oct 8, 2016 10:44:17 AM] The Flash command in the LP27-Full-Restore session completed.

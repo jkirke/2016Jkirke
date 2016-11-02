@@ -38,4 +38,5 @@ python2 zBlockchain_rest_client.py -l 192.168.103.116 -u zbcAdmin -p 'HSBN$Block
 
 /opt/manager 
 node networkDocGenerator.js devPOK createNetwork 192.168.103.111
+node networkDocGenerator.js devPOK recreateNetworkFromDoc 192.168.103.111
 node networkDocGenerator.js devPOK getNetworkDoc 192.168.103.110

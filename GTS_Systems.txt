@@ -16,7 +16,7 @@ zACI14	2E		192.168.103.114		Zbc-14	7806	7906	  7A06	  7B06	  7C06		  IGF					11/
 zACI15	2F		192.168.103.115		Zbc-15	7007	7107	  7207	  7307	  7407		  Vlad1				11/02
 zACI16	31		192.168.103.116		Zbc-16	7807	7907	  7A07	  7B07	  7C07		  Vlad2				11/02
 zACI17	32	  192.168.103.117   Zbc-17	7008	7108	  7208	  7308	  7408      IGF 2       11/01
-
+ZACI18	33	  192.168.103.118	  Zbc-18	7808	7908	  7A08	  7B08	  7C08      
 
 python2 zBlockchain_rest_client.py -l 192.168.103.116 -u zbcAdmin -p 'HSBN$Block1' -o createNetwork -c networkDocHSBN.txt.org
 
@@ -37,6 +37,7 @@ python2 zBlockchain_rest_client.py -l 192.168.103.114 -u zbcAdmin -p 'HSBN$Block
 python2 zBlockchain_rest_client.py -l 192.168.103.115 -u zbcAdmin -p 'HSBN$Block1' -o addDASD -d 0.0.7107,0.0.7207,0.0.7307,0.0.7407
 python2 zBlockchain_rest_client.py -l 192.168.103.116 -u zbcAdmin -p 'HSBN$Block1' -o addDASD -d 0.0.7907,0.0.7a07,0.0.7b07,0.0.7c07
 python2 zBlockchain_rest_client.py -l 192.168.103.117 -u zbcAdmin -p 'HSBN$Block1' -o addDASD -d 0.0.7108,0.0.7208,0.0.7308,0.0.7408
+python2 zBlockchain_rest_client.py -l 192.168.103.118 -u zbcAdmin -p 'HSBN$Block1' -o addDASD -d 0.0.7908,0.0.7a08,0.0.7b08,0.0.7c08
 
 /opt/manager 
 node networkDocGenerator.js devPOK createNetwork 192.168.103.111

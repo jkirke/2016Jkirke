@@ -41,8 +41,8 @@ python2 zBlockchain_rest_client.py -l 192.168.103.115 -u zbcAdmin -p 'HSBN$Block
 python2 zBlockchain_rest_client.py -l 192.168.103.116 -u zbcAdmin -p 'HSBN$Block1' -o addDASD -d 0.0.7907,0.0.7a07,0.0.7b07,0.0.7c07
 python2 zBlockchain_rest_client.py -l 192.168.103.117 -u zbcAdmin -p 'HSBN$Block1' -o addDASD -d 0.0.7108,0.0.7208,0.0.7308,0.0.7408
 python2 zBlockchain_rest_client.py -l 192.168.103.118 -u zbcAdmin -p 'HSBN$Block1' -o addDASD -d 0.0.7908,0.0.7a08,0.0.7b08,0.0.7c08
-python2 zBlockchain_rest_client.py -l 192.168.103.119 -u zbcAdmin -p 'HSBN$Block1' -o addDASD -d 0.0.7109,0.0.7209,0.0.7309,0.0.7409
-python2 zBlockchain_rest_client.py -l 192.168.103.120 -u zbcAdmin -p 'HSBN$Block1' -o addDASD -d 0.0.7909,0.0.7a09,0.0.7b09,0.0.7c09
+python2 zBlockchain_rest_client.py -l 192.168.103.119 -u zbcAdmin -p 'HSBN$Block1' -o addDASD -d 0.0.7109,0.0.7209,0.0.7309,0.0.7409,0.0.7433
+python2 zBlockchain_rest_client.py -l 192.168.103.120 -u zbcAdmin -p 'HSBN$Block1' -o addDASD -d 0.0.7909,0.0.7a09,0.0.7b09,0.0.7c09,0.0.7c29
 python2 zBlockchain_rest_client.py -l 192.168.103.121 -u zbcAdmin -p 'HSBN$Block1' -o addDASD -d 0.0.710a,0.0.720a,0.0.730a,0.0.740a
 
 /opt/manager 
